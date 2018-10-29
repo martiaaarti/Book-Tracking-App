@@ -1,6 +1,9 @@
-import React from 'react'
+import React from 'react';
 // import * as BooksAPI from './BooksAPI'
-import './App.css'
+import './App.css';
+import ListBooks from './ListBooks.js';
+import ShelfBooks from './ShelfBooks';
+
 
 class BooksApp extends React.Component {
   state = {
@@ -44,6 +47,7 @@ class BooksApp extends React.Component {
             </div>
             <div className="list-books-content">
               <div>
+                <ShelfBooks shelfs={[{title: 'Currently reading'}]}/>
                 <div className="bookshelf">
                   <h2 className="bookshelf-title">Currently Reading</h2>
                   <div className="bookshelf-books">
@@ -87,6 +91,7 @@ class BooksApp extends React.Component {
                     </ol>
                   </div>
                 </div>
+                <ShelfBooks shelfs={[{title: 'Want to Read'}]}/>
                 <div className="bookshelf">
                   <h2 className="bookshelf-title">Want to Read</h2>
                   <div className="bookshelf-books">
@@ -130,6 +135,7 @@ class BooksApp extends React.Component {
                     </ol>
                   </div>
                 </div>
+                <ShelfBooks shelfs={[{title: 'Read'}]}/>
                 <div className="bookshelf">
                   <h2 className="bookshelf-title">Read</h2>
                   <div className="bookshelf-books">
