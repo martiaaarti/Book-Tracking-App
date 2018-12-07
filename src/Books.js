@@ -12,6 +12,7 @@ const Books = props => {
                     <ChangerBooks
                     currentBookStatus={props.currentBookStatus}
                     updateBookList={props.updateBookList}
+                    defaultShelf={props.defaultShelf}
                     />                    
                 </div>
                 <div className="book-title">{props.currentBookStatus.title}</div>
