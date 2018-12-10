@@ -31,6 +31,6 @@ const BookShelfs = props => {
 export default BookShelfs;
 
 BookShelfs.propTypes = {
-    filterBooksStatus: PropTypes.func.isRequired,
+    currentShelfStatus: PropTypes.string.isRequired,
     updateBookList: PropTypes.func.isRequired
 }

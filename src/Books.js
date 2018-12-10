@@ -46,6 +46,6 @@ const Books = props => {
 export default Books; 
 
 Books.propTypes = {
-    currentBookStatus: PropTypes.func.isRequired,
+    currentBookStatus: PropTypes.object.isRequired,
     updateBookList: PropTypes.func.isRequired
 }
