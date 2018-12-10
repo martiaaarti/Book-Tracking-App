@@ -12,16 +12,15 @@ export default class ChangerBooks extends Component {
         this.props.updateBookList(currentBookStatus);
     };
 
+    
+
 
     render() {
+        const value = this.props.currentBookStatus.shelf ? this.props.currentBookStatus.shelf : "none"
         return (
             <div className="book-shelf-changer">
                 <select onChange={this.handleChange}
-                    value={
-                        this.props.currentBookStatus.shelf ?
-                            this.props.currentBookStatus.shelf :
-                            this.props.defaultStatus
-                    }>
+                    value={ value }>
                     <option value="move" disabled>Move to...</option>
                     <option value="currentlyReading">Currently Reading</option>
                     <option value="wantToRead">Want to Read</option>

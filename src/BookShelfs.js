@@ -1,5 +1,6 @@
 import React from 'react';
 import Books from './Books.js';
+import PropTypes from 'prop-types';
 
 
 
@@ -28,3 +29,8 @@ const BookShelfs = props => {
 }
 
 export default BookShelfs;
+
+BookShelfs.propTypes = {
+    filterBooksStatus: PropTypes.func.isRequired,
+    updateBookList: PropTypes.func.isRequired
+}

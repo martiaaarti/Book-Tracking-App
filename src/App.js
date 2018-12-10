@@ -42,13 +42,12 @@ export default class BooksApp extends Component {
             </div>
           </div>
         )} />
-        <Route path="/search"  render={({history}) => (
+        <Route path="/search" render={({ history }) => (
           <SearchBooks
             books={this.state.books}
-            updateBookList={this.updateBookList}/>  
-            // history.push('/')    
-        )}    
-          />
+            updateBookList={this.updateBookList} />
+        )}
+        />
       </div>
     )
   }
