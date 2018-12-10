@@ -168,8 +168,10 @@ h2 {
 .book-shelf-changer select {
   width: 100%;
   height: 100%;
+  background-color:#f0e3e9;
   opacity: 0;
   cursor: pointer;
+  font-family: 'Inconsolata', monospace;
 }
 
 /* book cover */
@@ -183,7 +185,4 @@ h2 {
   text-align: center;
   font-size: 0.8em;
 }
- img {
-  height: 193px;
-  width: 128px;
- }
+ 
